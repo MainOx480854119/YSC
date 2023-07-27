@@ -1,0 +1,24 @@
+# Ignore a blackhole and the folder for development
+node_modules/
+
+# Ignore typescript
+dist/
+
+# Ignore heapsnapshot and log files
+*.heapsnapshot
+*.log
+
+# Ignore database files
+*.db
+*.db-journal
+
+# Ignore pnpm lockfiles file
+pnpm-lock.yaml
+
+# Environment variables
+.env
+
+tsconfig.tsnode.json
+ecosystem.config.json
+
+temp/**

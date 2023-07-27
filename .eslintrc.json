@@ -1,0 +1,51 @@
+{
+  "root": true,
+  "ignorePatterns": [
+    "node_modules/",
+    "**/*.d.ts",
+    "scripts/**.ts",
+    "ecosystem.config.js",
+    "tsup.config.ts",
+    "dist/"
+  ],
+  "plugins": ["@typescript-eslint", "import"],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "script",
+    "project": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "airbnb-base",
+    "plugin:@typescript-eslint/strict-type-checked",
+    "plugin:@typescript-eslint/stylistic-type-checked",
+    "prettier"
+  ],
+  "env": {
+    "es6": true,
+    "node": true
+  },
+  "settings": {
+    "import/parsers": {
+      "@typescript-eslint/parser": [".ts"]
+    },
+    "import/resolver": {
+      "typescript": {
+        "project": "./tsconfig.json"
+      }
+    }
+  },
+  "rules": {
+    "no-bitwise": "off",
+    "no-void": ["off", { "allowAsStatement": true }],
+    "class-methods-use-this": "off",
+    "consistent-return": "off",
+
+    "import/extensions": ["error", "never", { "json": "always" }],
+    "import/prefer-default-export": "off",
+    "import/no-extraneous-dependencies": "off",
+
+    "@typescript-eslint/no-unused-vars": "off"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "dotenv.enableAutocloaking": false,
+  "workbench.editorAssociations": {
+    "*.db": "sqlite-viewer.option"
+  },
+  "typescript.tsdk": "node_modules\\typescript\\lib",
+  "editor.formatOnSave": true,
+  "[prisma]": {
+    "editor.defaultFormatter": "Prisma.prisma"
+  },
+  "[javascript][typescript][json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true
+    }
+  },
+  "eslint.format.enable": true,
+  "eslint.useESLintClass": true,
+  "trailing-spaces.includeEmptyLines": false,
+  "trailing-spaces.trimOnSave": true,
+  "eslint.debug": true,
+  "eslint.experimental.useFlatConfig": false,
+  "eslint.ignoreUntitled": false
+}

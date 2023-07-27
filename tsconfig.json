@@ -1,0 +1,10 @@
+{
+  "extends": ["@tsconfig/node-lts/tsconfig.json", "@tsconfig/strictest/tsconfig.json"],
+  "compilerOptions": {
+    "experimentalDecorators": true,
+    "resolveJsonModule": true,
+    "rootDir": "./src"
+  },
+  "include": ["src/**/*.json", "src/**/*.ts"],
+  "exclude": ["tsup.config.ts", "**/dist", "**/node_modules"]
+}

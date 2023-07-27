@@ -1,0 +1,17 @@
+{
+  "recommendations": [
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
+
+    "dotenv.dotenv-vscode",
+    "mikestead.dotenv",
+
+    "christian-kohler.npm-intellisense",
+    "christian-kohler.path-intellisense",
+
+    "EditorConfig.EditorConfig",
+    "Prisma.prisma",
+    "qwtel.sqlite-viewer"
+  ],
+  "unwantedRecommendations": []
+}
